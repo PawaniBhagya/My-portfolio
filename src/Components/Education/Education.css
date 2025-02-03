@@ -119,3 +119,46 @@
         gap: 30px;
     }
 }
+
+@media (max-width: 500px) {
+    .education {
+        align-items: center;
+        gap: 40px; /* Reduced gap for better spacing */
+        margin: 20px 20px; /* Adjusted margin for smaller screens */
+        text-align: center;
+    }
+
+    .education-title h1 {
+        font-size: 36px; /* Reduced font size for better fit */
+        padding: 0;
+    }
+
+    .education-title img {
+        width: 100px; /* Adjusted size */
+        margin-right: 0;
+    }
+
+    .education-format {
+        gap: 15px;
+        padding: 20px; /* Reduced padding for a compact layout */
+    }
+
+    .education-format h2 {
+        font-size: 24px; /* Adjusted for mobile readability */
+    }
+
+    .education-format p {
+        font-size: 16px; /* Slightly smaller font for readability */
+        line-height: 28px;
+        max-width: 100%; /* Allow full width on small screens */
+    }
+
+    .education-readmore img {
+        width: 18px; /* Slightly smaller icon */
+    }
+
+    .education-container {
+        grid-template-columns: 1fr; /* Stacked layout for small screens */
+        gap: 20px;
+    }
+}

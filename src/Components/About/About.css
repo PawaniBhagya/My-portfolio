@@ -174,3 +174,73 @@
         text-align: center;
     }
 }
+
+@media (max-width: 500px) {
+    .about {
+        gap: 50px; /* Reduced gap for better spacing */
+        margin: 30px 20px; /* Adjusted margin for smaller screens */
+        align-items: center;
+        text-align: center;
+    }
+
+    .about-title h1 {
+        font-size: 36px; /* Reduced font size for better fit */
+        padding: 0;
+    }
+
+    .about-title img {
+        width: 100px; /* Adjusted size */
+        right: 0;
+    }
+
+    .about-sections {
+        flex-direction: column;
+    }
+
+    .about-left {
+        display: none;
+    }
+
+    .about-para {
+        font-size: 16px; /* Slightly smaller font for readability */
+        line-height: 28px;
+        text-align: center;
+    }
+
+    .about-skill {
+        gap: 15px;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .about-skill p {
+        font-size: 18px;
+    }
+
+    .about-skill hr {
+        height: 4px;
+        width: 80%;
+    }
+
+    .about-certifications {
+        flex-direction: column;
+        grid-template-columns: 1fr; /* Stack certifications vertically */
+        align-items: center;
+        gap: 20px;
+    }
+
+    .about-certification {
+        gap: 8px;
+        text-align: center;
+    }
+
+    .about-certification h1 {
+        font-size: 20px;
+        font-weight: 400;
+    }
+
+    .about-certification p {
+        font-size: 12px;
+        text-align: center;
+    }
+}

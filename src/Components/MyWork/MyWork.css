@@ -98,3 +98,40 @@
         cursor: pointer;
     }
 }
+
+@media (max-width: 500px) {
+    .mywork {
+        gap: 30px; /* Reduced gap for better spacing */
+        margin: 30px 20px; /* Adjusted margin for smaller screens */
+        align-items: center;
+        text-align: center;
+    }
+
+    .mywork-title h1 {
+        padding: 0;
+        font-size: 36px; /* Reduced font size for better fit */
+        font-weight: 600;
+    }
+
+    .mywork-title img {
+        width: 100px; /* Adjusted size */
+        margin-right: 0;
+    }
+
+    .mywork-container {
+        grid-template-columns: 1fr; /* Stacked layout for small screens */
+        gap: 20px;
+    }
+
+    .mywork-container img {
+        width: 100%;
+        height: auto; /* Maintain aspect ratio */
+    }
+
+    .mywork-showmore {
+        padding: 15px 30px;
+        font-size: 16px; /* Slightly smaller font */
+        margin: 30px auto;
+        cursor: pointer;
+    }
+}

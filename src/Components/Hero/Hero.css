@@ -103,3 +103,47 @@
 
     
 }
+
+@media (max-width: 500px) {
+    .hero img {
+        margin-top: 100px;
+        width: 200px; /* Reduced width for better fit */
+    }
+
+    .hero h1 {
+        margin-top: 40px;
+        width: 95%;
+        font-size: 36px; /* Reduced font size for better readability */
+        text-align: center;
+    }
+
+    .hero p {
+        width: 80%; /* Increased width to avoid too much text wrapping */
+        font-size: 16px; /* Slightly smaller font */
+        line-height: 28px;
+        margin: 10px auto;
+        text-align: center;
+    }
+
+    .hero-action {
+        gap: 12px;
+        font-size: 16px;
+        font-weight: 500;
+        margin-bottom: 40px;
+        flex-direction: column; /* Stack buttons vertically */
+        align-items: center;
+    }
+
+    .hero-connect, 
+    .hero-resume {
+        padding: 15px 40px;
+        border-radius: 30px;
+        font-size: 16px;
+    }
+
+    .hero-resume {
+        padding: 15px 45px; /* Slightly adjusted for consistency */
+    }
+}
+
+

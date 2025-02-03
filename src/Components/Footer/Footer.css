@@ -85,3 +85,20 @@
         margin-bottom: 50px;
     }  
 }
+
+@media (max-width: 500px) {
+    .footer {
+        margin: 30px 20px; /* Adjusted margin for smaller screens */
+    }
+
+    .footer-top {
+        flex-direction: column;
+        gap: 30px; /* Reduced gap for better spacing */
+    }
+
+    .footer-bottom {
+        display: flex;
+        flex-direction: column-reverse;
+        margin-bottom: 30px; /* Reduced margin for smaller screens */
+    }
+}
