@@ -5,8 +5,21 @@ import AnchorLink from 'react-anchor-link-smooth-scroll';
 
 const Hero = () => {
 
-  const handleResumeClick = () => {
-    window.open('/PawaniBhagya.pdf', '_blank'); //opens the pdf in a new tab
+  const handleResumeClick = (event) => {
+    event.preventDefault(); //prevents the default action of the event from happening
+
+    const resumeUrl = '/PawaniBhagya.pdf';
+
+    //Check if the device is mobile
+    const isMobile = /iPhone|iPad|iPod|Android/i.test(navigator.userAgent);
+
+    if (isMobile) {
+      // Mobile: Open PDF in a new tab
+      window.location.href = resumeUrl;
+    } else {
+      // Desktop: Open in a new tab
+      window.open(resumeUrl, '_blank');
+    }
   };
 
   return (
@@ -16,7 +29,8 @@ const Hero = () => {
         <p>I'm a motivated and committed undergraduate specializing in software technology at Uva Wellassa University of Sri Lanka. I am excited for an internship opportunity that will allow me to engage my academic knowledge into practice in real-world situations. </p>
         <div className="hero-action">
             <div className="hero-connect"><AnchorLink className='anchor-link' offset={50} href='#contact'>Connect with me</AnchorLink></div>
-            <div className="hero-resume" onClick={handleResumeClick}>My Resume</div>
+            <div className="hero-resume">
+              <a href="/PawaniBhagya.pdf" onClick={handleResumeClick}>My Resume</a></div>
         </div>
     </div>
   )
