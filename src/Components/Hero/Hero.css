@@ -143,6 +143,9 @@
 
     .hero-resume {
         padding: 15px 45px; /* Slightly adjusted for consistency */
+    }
+
+    .a:visited{
         color: inherit;
         text-decoration: none;
     }
