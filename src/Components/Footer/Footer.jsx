@@ -25,7 +25,7 @@ const Footer = () => {
             <div className="footer-bottom-right">
                 <p>Term of Services</p>
                 <p>Privacy Policy</p>
-                <p>Connect with me</p>
+                <p>Connect with Me</p>
             </div>
         </div>
     </div>
