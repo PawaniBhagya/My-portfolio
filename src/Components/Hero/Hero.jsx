@@ -30,7 +30,7 @@ const Hero = () => {
         <div className="hero-action">
             <div className="hero-connect"><AnchorLink className='anchor-link' offset={50} href='#contact'>Connect with me</AnchorLink></div>
             <div className="hero-resume">
-              <a href="/PawaniBhagya.pdf" onClick={handleResumeClick}>My Resume</a></div>
+              <a href="/PawaniBhagya.pdf" onClick={handleResumeClick} style={{color:"white", textDecoration:"none"}}>My Resume</a></div>
         </div>
     </div>
   )
